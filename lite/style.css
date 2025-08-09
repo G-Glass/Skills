@@ -1,0 +1,164 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body {
+    background-color: black;
+    font-size: 1.05em;
+}
+header {
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    height: 50px;
+}
+header > h1 > img {
+    height: 50px;
+    flex: 0 0 50px;
+}
+header div {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+header div a {
+    align-self: center;
+    margin: 0px 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+nav a {
+    align-self: center;
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 10px;
+    background-color: rgb(107, 177, 177);
+}
+section {
+    background-color: rgb(208, 247, 247);
+    border-radius: 10px;
+}
+h2 {
+    text-align: center;
+}
+h2, h3,p,article,div, aside {
+    padding: 5px;
+}
+article {
+    background-color: rgba(82, 168, 139, 0.486);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+div.tab{
+    flex: 1 1 50%;
+}
+div.form {
+    flex: 1 1 50%;
+}
+table {
+    border: 2px solid;
+    padding: 2px;
+    border-collapse: collapse;
+}
+tr, th, td {
+    border: 2px solid;
+    padding: 4px;
+}
+caption {
+    background-color: rgb(28, 59, 59);
+    color: white;
+    font-weight: bold;
+}
+div.tab {
+    overflow-x: auto;
+}
+.col1 {
+    background-color: rgba(7, 243, 184, 0.712);
+}
+.col2 {
+    background-color: white;
+}
+.col3 {
+    background-color: rgb(4, 227, 243);
+}
+fieldset {
+    border: 2px solid;
+    border-radius: 5px;
+}
+.principal {
+    text-align: center;
+}
+.sexo {
+    margin: 0px 10px;
+}
+.sub {
+    text-align: center;
+    margin: 10px 0px;
+}
+.enviar {
+    padding: 3px;
+    background-color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+#sex>div {
+    display: inline-block;
+    margin-right: 10px;
+}
+legend {
+    font-weight: bold;
+}
+footer {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    height: 30px;
+}
+
+
+@media screen and (max-width: 660px ) {
+    body {
+        background-color: black;
+    }
+    header {
+        background-color: rgba(0, 128, 117, 0.39);
+    }
+    header h1 {
+        align-self: flex-start;
+    }
+    header div {
+        align-self: flex-start;
+    }
+    nav {
+        background-color: black;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    nav a {
+        margin: 3px;
+        color: white;
+    }
+    article {
+        flex-flow: column nowrap;
+    }
+}
